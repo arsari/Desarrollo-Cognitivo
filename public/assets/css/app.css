@@ -1,14 +1,544 @@
-.navbar-brand {
-  padding: 10px;
+/*
+ *  Codetrotters Intro to Web Development Fall 2016
+ *  CSS File Final Project
+ *  Arturo Santiago-Rivera
+ */
+
+body {
+    background-color: #E0E0E0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navbar-brand > img {
-  width: 120px;
-  height: 30px;
+#myHeader #navbar-h {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: #3F51B5;
+    box-shadow: 0px 2px 5px grey;
 }
 
-.cat {
-  width: 400px;
-  height: 300px;
-  position: relative;
+#myHeader .navbar-brand {
+    color: rgb(255, 129, 34);
+}
+
+#myHeader .nav a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#myHeader .navbar-nav a:hover {
+  color: #C5CAE9;
+}
+
+#myHeader .navbar-nav a:focus {
+  background-color: #C5CAE9;
+  color: #3F51B5;
+}
+
+#myHeader .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+#myHeader .navbar-toggle:hover,
+#myHeader .navbar-toggle:focus {
+  background-color: #C5CAE9;
+}
+
+#myHeader #carousel-example-generic {
+    height: 550px;
+    margin-top: 16px;
+}
+
+#myHeader .carousel-caption {
+    height: 380px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, .6);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#myHeader .carousel-caption a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#myHeader .carousel-caption a:hover {
+    color: #CFD8DC;
+}
+
+#myHeader .item img {
+    width: 100%;
+    height: 55rem;
+    opacity: 0.45;
+}
+
+#myHeader h1 {
+    font-size: 30px;
+}
+
+#myHeader #welcome-bar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#myHeader #welcome-bar a:hover {
+    color: #E1BEE7;
+}
+
+#myHeader #welcome-bar a:focus {
+    color: #E1BEE7;
+}
+
+#myHeader #welcome-bar h1 {
+    margin: 16px -9px 0px -2px;
+    padding: 6px 0 3px 20px;
+    border-color: #777777;
+    border-radius: 10px;
+    background-color: #9C27B0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+#myHeader #welcome .well {
+    margin-bottom: 0;
+    color: #333333;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background: #F3E5F5;
+    font-size: 18px;
+}
+
+#myHeader #welcome img {
+    width: 12rem;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+#myHeader #welcome p {
+    display: -webkit-box;
+    margin-bottom: 0;
+    padding-right: 5px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+#myHeader #welcome span {
+    color: #B71C1C;
+    font-weight: bolder;
+}
+
+#myHeader #welcome span:hover {
+    color: #BA68C8;
+}
+
+#myContent .container {
+    padding: 0px;
+}
+
+#myContent .row {
+    margin: 0px 9px;
+}
+
+#myContent .section-panel {
+    text-align: center;
+    border-color: #777777;
+    font-weight: 500;
+}
+
+#myContent h1 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 45px;
+}
+
+#myContent h2 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+#myContent h3 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-right: 40px;
+  text-align: right;
+  font-size: 20px;
+}
+
+#myContent .section-panel a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+#myContent .section-panel a.note {
+    color: #0097A7;
+    text-shadow: none;
+}
+
+#myContent #section-1 a.note:hover,
+#myContent #section-2 a.note:hover,
+#myContent #section-3 a.note:hover,
+#myContent #section-4 a.note:hover {
+    color: #B71C1C;
+}
+
+#myContent #section-1 {
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    padding-right: 0;
+    padding-left: 0;
+    border-top-left-radius: 25px;
+    background-color: #E91E63;
+}
+
+#myContent #section-1 a:hover {
+    text-decoration: none;
+    color: #F8BBD0;
+}
+
+#myContent #section-1 a:focus {
+    color: #F8BBD0;
+}
+
+#myContent #section-2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    border-top-right-radius: 25px;
+    background-color: #2196F3;
+}
+
+#myContent #section-2 a:hover {
+    text-decoration: none;
+    color: #BBDEFB;
+}
+
+#myContent #section-2 a:focus {
+    color: #BBDEFB;
+}
+
+#myContent #section-3 {
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding-right: 0;
+    padding-left: 0;
+    border-bottom-left-radius: 25px;
+    background-color: #FF5722;
+}
+
+#myContent #section-3 a:hover {
+    text-decoration: none;
+
+    color: #FFCCBC;
+}
+
+#myContent #section-3 a:focus {
+    color: #FFCCBC;
+}
+
+#myContent #section-4 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    border-bottom-right-radius: 25px;
+    background-color: #009688;
+}
+
+#myContent #section-4 a:hover {
+    text-decoration: none;
+    color: #B2DFDB;
+}
+
+#myContent #section-4 a:focus {
+    color: #B2DFDB;
+}
+
+#myContent .collapse-right {
+    float: right;
+}
+
+#myContent .collapse {
+    padding: 0;
+}
+
+#myContent .well {
+    margin: 0;
+    margin-top: 16px;
+    padding: 15px;
+    text-align: justify;
+    color: #333333;
+    border: 15px solid #dddddd;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+#myContent #collapse-1 .well {
+    border-color: #E91E63;
+    background: #FCE4EC;
+}
+
+#myContent .panel-group {
+    margin: 0;
+}
+
+#myContent .panel-heading {
+    background: #EC407A;
+}
+
+#myContent .panel-body {
+    background: #F8BBD0;
+}
+
+#myContent .panel-body p {
+    margin: 0;
+    color: #333333;
+    font-size: 16px;
+}
+
+#myContent #collapse-1 img {
+    width: 20rem;
+    padding: 5px 10px;
+
+    border-radius: 25px;
+}
+
+#myContent #collapse-2 .well {
+    border-color: #2196F3;
+    background: #E3F2FD;
+}
+
+#myContent #collapse-2 img {
+    width: 28rem;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+#myContent #collapse-3 .well {
+    border-color: #FF5722;
+    background: #FBE9E7;
+}
+
+#myContent #collapse-3 img {
+    width: 25rem;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+#myContent #collapse-4 .well {
+    border-color: #009688;
+    background: #E0F2F1;
+}
+
+#myContent #collapse-4 img {
+    width: 26rem;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+#myContent .back_to_top {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 5em;
+    padding: 0.25em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #d9534f;
+    font-size: 15px;
+}
+
+#myContent .back_to_top:hover {
+    color: yellow;
+    background-color: #3c763d;
+}
+
+#myFooter {
+    color: #ffffff;
+    background-color: #37474F;
+}
+
+#myFooter .row {
+    margin-bottom: 10px;
+}
+
+#myFooter .info{
+    text-align: justify;
+    color: #afb0b1;
+    font-size: 10px;
+    line-height: 1.75;
+}
+
+#myFooter ul {
+    padding-left: 0;
+    list-style-type: none;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#myFooter .logo {
+    margin-top: 0px;
+}
+
+#myFooter .second-bar .logo a {
+    float: left;
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 68px;
+}
+
+#myFooter a {
+    text-decoration: none;
+    color: #d2d1d1;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    color: #ffffff;
+}
+
+#myFooter .second-bar {
+    text-align: center;
+    background-color: #263238;
+}
+
+#myFooter .second-bar a {
+    padding: 10px;
+    transition: 0.2s;
+    color: #9fa3a9;
+    font-size: 22px;
+    line-height: 68px;
+}
+
+#myFooter .second-bar a:hover {
+    text-decoration: none;
+}
+
+#myFooter .social-icons {
+    float: right;
+}
+
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .pinterest:hover {
+    color: red;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+      }
+
+#myFooter .info{
+        text-align: center;
+        }
+}
+
+#myFooter h2 {
+    margin: 0;
+}
+
+#myFooter .second-bar img {
+    width: 60px;
+}
+
+#myModal {
+    color: #ffffff;
+}
+
+#myModal a {
+  color: #ffffff;
+}
+
+#myModal .modal-header {
+    background-color: #01579B;
+}
+
+#myModal .panel-heading {
+    background: #039BE5;
+}
+
+#myModal .modal-body {
+    color: #333333;
+    background-color: #E1F5FE;
+}
+
+#myModal .modal-body p {
+    text-align: justify;
+}
+
+#myModal .modal-body p span {
+    color: #03A9F4;
+}
+
+#myModal .modal-body p span:hover {
+    color: #F44336;
+}
+
+#myModal .panel-body {
+    text-align: justify;
+
+    background-color: #81D4FA;
+}
+
+#myModal .panel-body ul {
+    padding-left: 15px;
+
+    list-style-type: disc;
+}
+
+#myModal #collapseEleven img {
+    width: 34%;
+    margin: 0px 8px 0px 0px;
+    padding: 0;
+}
+
+#myModal #collapseTwelve img {
+    width: 22%;
+    margin: 0px 10px 0px 0;
+    padding: 0;
+}
+
+#myModal .modal-footer {
+    background-color: #01579B;
+}
+
+#myModalVideo .modal-header {
+    background-color: #F44336;
+}
+
+#myModalVideo .modal-footer {
+    background-color: #F44336;
+}
+
+#myModalVideo .modal-body {
+    color: #333333;
+    background-color: #FFCDD2;
 }

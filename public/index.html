@@ -1,33 +1,598 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Javascript Tutorial</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="assets/css/app.css">
-  <script type="text/javascript" src="assets/js/jquery.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO meta code -->
+    <title>Desarrollo Cognitivo</title>
+    <meta name="description" content="Codetrotters Intro to Web Development Fall 2016 - Arturo Santiago Final Project" />
+    <meta name="keywords" content="cognitivo, codetrotters, web development, final project" />
+    <meta name="author" content="Arturo Santiago-Rivera" />
+    <meta name="designer" content="Arturo Santiago-Rivera" />
+    <!-- CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="all" title="Bootstrap v3.3.7" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css" media="all" title="" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" title="" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" media="all" title="" />
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css" media="all" title="" />
 </head>
+
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img alt="Brand" src="assets/images/logo.png">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" id="home">Home</a></li>
-          <li><a href="#" id="about">About</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div>
-  </nav>
-  <div class="container">
-    <!-- Container -->
-  </div>
+    <header id="myHeader">
+        <!-- Navbar star -->
+        <nav class="navbar navbar-default" id="navbar-h">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Grupo Arsari</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#myContent">Estadios</a></li>
+                        <li><a href="#myModalVideo" data-toggle="modal" data-target="#myModalVideo">Videos</a></li>
+                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal">FAQ</a></li>
+                        <li><a href="#disclaimer">Relevo</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- Navbar end -->
+        <div class="container">
+            <!-- Carousel start -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-caption">
+                    <a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome">Desarollo Cognitivo<br>del Niño</a>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="assets/images/image1.png" alt="Vianca">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/image2.png" alt="Vianca">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/image3.png" alt="Anabella">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/image4.png" alt="Anabella">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/image5.png" alt="Anabella">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/image6.png" alt="Anabella">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/image7.png" alt="Anabella">
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel end -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset1 col-md-10 col-md-offset-1" id="welcome-bar">
+                    <a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome">
+                        <h1>Bienvenidos...</h1>
+                    </a>
+                    <div class="col-xs-12 col-sm-12 col-md-12 collapse" id="welcome">
+                        <div class="well">
+                            <img src="assets/images/image6.png" alt="Anabella" class="col-xs-6 col-sm-3 col-md-3 img-circle" />
+                            <p>El trabajo de proyecto aqui presentado esta motivado en el aprendizaje del desarrollo psicológico de mis nietas, Anabella y Vianca, y basado en la teoría del desarrollo cogntivo, o tambien llamado desarrollo cognoscitivo de
+                                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Jean William Fritz Piaget (1896-1980)" data-content="Famoso por sus aportes al estudio de la infancia y por su teoría constructivista del desarrollo de la inteligencia.">
+                                <span>Jean Piaget</span></a>. La teoría de Piaget es una sobre la naturaleza y el desarrollo de la inteligencia humana. Piaget creía que la infancia del individuo juega un papel vital y activo con el crecimiento de
+                                la inteligencia, y que el niño aprende a través de hacer y explorar activamente. Las fases de desarrollo expuestas por Piaget forman una secuencia de cuatro etapas que a su vez se dividen en otras subetapas. Estas cuatro
+                                etapas principales quedan enumeradas y explicadas brevemente a continuación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="myContent">
+        <div class="container">
+            <div class="row">
+                <section class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 section-panel" id="section-1">
+                    <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                        <h1>1<sup>ra</sup> Etapa</h1>
+                        <h2>Estadio Sensoriomotor</h2>
+                        <h3><em>(0 - 2 años)</em></h3>
+                    </a>
+                    <!-- Collapse start -->
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-10 col-md-10 collapse" id="collapse-1">
+                            <div class="well">
+                                <img src="assets/images/etapa1.jpg" alt="Sensoriomotor" class="col xs-6 col-sm-3 col-md-3" />
+                                <p>La inteligencia de los niños y niñas es práctica, centrada en el sí mismo, y en el momento presente en el aquí y ahora. El niño se relaciona con el mundo a través de los sentidos y la acción. A lo largo de este periodo
+                                    se producen importantes adquisiciones, la acción de los bebés evoluciona desde los reflejos innatos, que se convierten en hábitos. Poco después aparecen las <a type="button" class="note" data-toggle="tooltip" data-placement="top"
+                                    title="Acciones encaminadas a mantener un resultado.">reacciones circulares</a> y con estas los primeros esquemas mentales. Las seis sub-etapas del periodo sensoriomotor van pasando de una a otra en medida que se van
+                                    desarrollando los esquemas del bebé. Un esquema es un patrón organizado de la conducta. Los primeros reflejos simples, progresan a conductas con una finalidad. Cuando estas son placenteras el bebé las repite y crea
+                                    un ciclo que Piaget denomina reacciones circulares primarias.</p>
+                                <!-- Collapse accordion start -->
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <!-- Accordion start --->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                1<sup>ra</sup> Subetapa: 0 a 1 mes
+                                              </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <p>El uso de los reflejos durante el primer mes de vida los bebés ejercitan aquellos reflejos que tienen y logran un pequeño control sobre ellos. Al poco tiempo comienzan a mostrarlos aunque el estímulo que
+                                                    lo solicitaba no esté presente. El reflejo de succión se dispara cada vez que se le toca, luego lo puede realizar cuando quiera. Con el tiempo todos estos esquemas se van modificando y sofisticando.
+                                                    Para el bebé no existe permanencia del objeto, falta totalmente. Según Piaget, en este periodo no existe ningún tipo de imitación.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion end -->
+                                    <!-- Accordion start --->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                2<sup>da</sup> Subetapa: 1 a 4 meses
+                                              </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>Primeras adaptaciones adquiridas y reacciones circulares primarias en esta subetapa se hacen los primeros cambios en conductas para adaptarse a una nueva situación. La succión es un ejemplo prototípico de
+                                                    una reacción circular primaria. Lo realiza para obtener placer, sólo es reacción circular primaria si se realiza con su propio cuerpo. La permanencia del objeto está ausente, pero sigue el objeto con
+                                                    la vista, aunque no lo busca cuando sale del campo visual. Aparecen conductas preimitativas e intentos de imitación. Están restringidas a que el modelo haya imitado previamente al bebé.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion end -->
+                                    <!-- Accordion start --->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                3<sup>ra</sup> Subetapa: 4 a 8 meses
+                                              </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>Reacciones circulares secundarias se dice que es el principio de la acción intencional. Coincide con el momento en el que nace su interés por alcanzar objetos manipulables en el <a type="button" class="note"
+                                                        data-toggle="tooltip" data-placement="top" title="biberón, chupa, etc.">ambiente</a> se repiten los comportamientos para ver resultados ajenos al cuerpo. En esta etapa empieza a desarrollarse la permanencia
+                                                    del objeto. Lo busca si puede ver una parte de él. Imitación: es capaz de realizar imitaciones voluntarias y sistemáticas de sonidos y movimientos hechos por un modelo. Sólo pueden ser conductas que
+                                                    estén en su repertorio.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion end -->
+                                    <!-- Accordion start --->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                4<sup>ta</sup> Subetapa: 8 a 12 meses
+                                              </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                                <p>Coordinación de esquemas secundarios y aplicación a situaciones nuevas la intencionalidad es plena, las conductas tienen un propósito definido y los <a type="button" class="note" data-toggle="tooltip" data-placement="top"
+                                                    title="girar la cabeza, abrir la mano, etc.">esquemas motores</a> se coordinan para lograr fines (que le den algo) es capaz de resolver problemas nuevos a partir de experiencias pasadas. Se imagina mentalmente
+                                                    lo que quiere y lo busca, planificando formas de conseguirlo. Busca objetos ocultos, pero con limitaciones. Si se esconde un objeto en A y luego en B, lo busca en A. Imita sonidos, movimientos y gestos
+                                                    nuevos a él.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion end -->
+                                    <!-- Accordion start --->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFive">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                5<sup>ta</sup> Subetapa: 12 a 18 meses
+                                              </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                            <div class="panel-body">
+                                                <p>Reacciones circulares terciarias se dice que es la primera etapa en la que ensayan activamente nuevas actividades en lugar de sólo repetir las antiguas. En las reacciones circulares terciarias, los bebés
+                                                    modifican voluntariamente sus conductas para ver lo que sucede. Tienen un interés desmedido por la novedad y va modificando su comportamiento para conseguir mejor sus fines. Se sigue desarrollando la
+                                                    permanencia del objeto: si un objeto se esconde en A y luego en B, lo busca en B. No pueden imaginarse movimientos que no han visto. Imitación: el nivel de imitación se puede decir que es casi perfecto
+                                                    (hasta el punto que sea posible para cada persona).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion end -->
+                                    <!-- Accordion start --->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingSix">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                6<sup>ta</sup> Subetapa: 18 a 24 meses
+                                              </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                            <div class="panel-body">
+                                                <p>Invención de nuevos medios a través de combinaciones mentales. En esta subetapa el niño piensa (planifica) antes de hacer las cosas. Elabora imágenes mentales de los hechos y no actúa sólo por ensayo - error.
+                                                    Permanencia del objeto absolutamente desarrollada, incluso busca lo que no ha visto esconder. Los niños comienzan a entender la información que perciben sus sentidos y su capacidad de interactuar con
+                                                    el mundo. Durante esta etapa, los niños aprenden a manipular objetos, aunque no pueden entender la permanencia de estos objetos si no están dentro del alcance de sus sentidos. Es decir, una vez que un
+                                                    objeto desaparece de la vista del niño o niña, no puede entender que todavía existe ese objeto (o persona). Por este motivo les resulta tan atrayente y sorprendente el juego al que muchos adultos juegan
+                                                    con sus hijos, consistente en esconder su cara tras un objeto, como un cojín, y luego volver a “aparecer”. Es un juego que contribuye, además, a que aprendan la permanencia del objeto, que es uno de
+                                                    los mayores logros de esta etapa: la capacidad de entender que estos objetos continúan existiendo aunque no pueda verlos. Esto incluye la capacidad para entender que cuando la madre sale de la habitación,
+                                                    regresará, lo cual aumenta su sensación de seguridad. Esta capacidad suelen adquirirla hacia el final de esta etapa y representa la habilidad para mantener una imagen mental del objeto (o persona) sin
+                                                    percibirlo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion end -->
+                                </div>
+                                <!-- Collapse accordion end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Collapse end -->
+                </section>
+                <section class="col-xs-12 col-sm-5 col-md-5 section-panel" id="section-2">
+                    <a role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                        <h1>2<sup>da</sup> Etapa</h1>
+                        <h2>Estadio Preoperatorio</h2>
+                        <h3><em>(2 - 7 años)</em></h3>
+                    </a>
+                    <div class="container collapse-right">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 collapse" id="collapse-2">
+                            <div class="well">
+                                <img src="assets/images/etapa2.jpg" alt="Preoperatorio" class="col xs-6 col-sm-3 col-md-3" />
+                                <p>Se produce un avance en la forma de pensar. En esta etapa se produce un adelanto extraordinario en la actividad representacional y aparece la función simbólica, los niños y niñas utilizan símbolos para representar objetos,
+                                    lugares y personas, puede retroceder y avanzar en el tiempo. El pensamiento va más allá de los actos y los hechos inmediatos. Pero en esta etapa el pensamiento es todavía rudimentario. Durante esta etapa, los niños
+                                    aprenden cómo interactuar con su ambiente de una manera más compleja mediante el uso de palabras y de imágenes mentales. Esta etapa está marcada por el egocentrismo, o la creencia de que todas las personas ven el mundo
+                                    de la misma manera que él o ella. También creen que los objetos inanimados tienen las mismas percepciones que ellos, y pueden ver, sentir, escuchar, etc. Un segundo factor importante en esta etapa es la Conservación,
+                                    que es la capacidad para entender que la cantidad no cambia cuando la forma cambia. Es decir, si el agua contenida en un vaso corto y ancho se vierte en un vaso alto y fino, los niños en esta etapa creerán que el vaso
+                                    más alto contiene más agua debido solamente a su altura. Esto es debido a la incapacidad de los niños de entender la reversibilidad y debido a que se centran en sólo un aspecto del estímulo, por ejemplo la altura, sin
+                                    tener en cuenta otros aspectos como la anchura.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 section-panel" id="section-3">
+                    <a role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                        <h1>3<sup>ra</sup> Etapa</h1>
+                        <h2>Estadio Operaciones Concretas</h2>
+                        <h3><em>(7 - 12 años)</em></h3>
+                    </a>
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-10 col-md-10 collapse" id="collapse-3">
+                            <div class="well">
+                                <img src="assets/images/etapa3.jpg" alt="Operaciones Concretas" class="col xs-6 col-sm-3 col-md-3" />
+                                <p>Es una etapa que se sustenta en los logros de las etapas anteriores y se logran importantes avances en el pensamiento. Los niños y niñas adquieren mayores nociones y superan cualitativamente las posibilidades de su pensamiento.
+                                    El pensamiento se convierte en lógico. En esta etapa, comienza el razonamiento, los pensamientos dejan de ser intuitivos y se basan en el razonamiento. Se aplica la lógica y comienza a pensar en lo posible. El pensamiento
+                                    es reversible, flexible y mucho más complejo. es la disminución gradual del pensamiento egocéntrico y por la capacidad creciente de centrarse en más de un aspecto de un estímulo. Pueden entender el concepto de agrupar,
+                                    sabiendo que un perro pequeño y un perro grande siguen siendo ambos perros, o que los diversos tipos de monedas y los billetes forman parte del concepto más amplio de dinero. Sólo pueden aplicar esta nueva comprensión
+                                    a los objetos concretos (aquellos que han experimentado con sus sentidos). Es decir, los objetos imaginados o los que no han visto, oído, o tocado, continúan siendo algo místicos para estos niños, y el pensamiento abstracto
+                                    tiene todavía que desarrollarse.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xs-12 col-sm-5 col-md-5 section-panel" id="section-4">
+                    <a role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                        <h1>4<sup>ta</sup> Etapa</h1>
+                        <h2>Estadio Operaciones Formales</h2>
+                        <h3><em>(12 años en adelante)</em></h3>
+                    </a>
+                    <div class="container collapse-right">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 collapse" id="collapse-4">
+                            <div class="well">
+                                <img src="assets/images/etapa4.jpg" alt="Operaciones Formales" class="col xs-6 col-sm-3 col-md-3" />
+                                <p>Es la etapa final del <a type="button" class="note" data-toggle="tooltip" data-placement="bottom" title="Desde los doce años en adelante.">desarrollo cognitivo</a>, los niños comienzan a desarrollar una visión más abstracta
+                                    del mundo y a utilizar la lógica formal. Se logra la abstracción sobre conocimientos concretos observados, lo cual permite emplear el razonamiento lógico inductivo y deductivo. Puede formular hipótesis, tiene en cuenta
+                                    el mundo de lo posible.Pueden aplicar la reversibilidad y la conservación a las situaciones tanto reales como imaginadas. También desarrollan una mayor comprensión del mundo y de la idea de causa y efecto. Esta etapa
+                                    se caracteriza por la capacidad para formular hipótesis y ponerlas a prueba para encontrar la solución a un problema. Otra característica del individuo en esta etapa es su capacidad para razonar en contra de los hechos.
+                                    Es decir, si le dan una afirmación y le piden que la utilice como la base de una discusión, es capaz de realizar la tarea. Por ejemplo, pueden razonar sobre la siguiente pregunta: ¿Qué pasaría si el cielo fuese rojo?”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- back_to_top floating button start -->
+        <a class="back_to_top" href="#"><span class="fa-stack"><i class="fa fa-arrow-up" style=""></i></span></a>
+        <!-- back_to_top floating button end -->
+    </main>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Comenzando</h5>
+                    <ul>
+                        <li><a href="#navbar-h">Inicio</a></li>
+                        <li><a href="#welcome-bar">Bienvenida</a></li>
+                        <li><a href="#myContent">Etadios</a></li>
+                        <li><a href="#myModalVideo" data-toggle="modal" data-target="#myModalVideo">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Estapas Desarrollo</h5>
+                    <ul class="sec-links">
+                        <li><a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1" id="sl-1">1<sup>ra</sup> Etapa - Sensoriomotor</a></li>
+                        <li><a role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2" id="sl-2">2<sup>da</sup> Etapa - Preoperatorio</a></li>
+                        <li><a role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3" id="sl-3">3<sup>ra</sup> Etapa - Operaciones Concretas</a></li>
+                        <li><a role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4" id="sl-4">4<sup>ta</sup> Etapa - Operaciones Formales</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Soporte</h5>
+                    <ul>
+                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal">FAQ</a></li>
+                        <li><a href="http://www.arsari.com/about.html" target="_blank">Informacion Compañia</a></li>
+                        <li><a href="http://www.arsari.com/contact.html" target="_blank">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info" id="disclaimer">
+                    <h5>Relevo</h5>
+                    <p>La informacion provista en este sitio web es para orientar el lector sobre la teoria del desarrollo cognitivo de Jean Piaget. La informacion presentada es una de caracter general compilada de diferentes sitios en la internet. Grupo
+                        Arsari o Arturo Santiago-Rivera no se hace responsable de las interpretaciones u opiniones desarrolladas por el lector y el origen de la informacion aqui descrita.</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-bar">
+            <div class="container">
+                <h2 class="logo"><a href="#"><img src="assets/images/galogo_trans.gif" alt="Grupo Arsari Logo"> </a></h2>
+                <div class="social-icons">
+                    <a href="https://www.twitter.com/arq_asr" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/arq.asr" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.pinterest.com/arsari" target="_blank" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal start -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Preguntas Frecuentes...</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Jean William Fritz Piaget (1896-1980)" data-content="Famoso por sus aportes al estudio de la infancia y por su teoría constructivista del desarrollo de la inteligencia.">
+                                <span>Jean Piaget</span></a> señaló que la realidad es un sistema dinámico en continuo cambio y, como tal, se define en referencia a las dos condiciones que definen los sistemas dinámicos. En concreto, argumentó que el
+                            desarrollo implica transformaciones y etapas. Las transformaciones se refieren a toda clase de cambios que una cosa o persona puede experimentar. Los Estados se refieren a las condiciones o las apariencias en el que las cosas
+                            o las personas pueden ser encontrados entre las transformaciones.</p>
+                        <!-- Collapse accordion start -->
+                        <div class="panel-group" id="modal-accordion" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion start --->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEleven">
+                                    <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                        ¿Que es el <i>Desarrollo Cognitivo</i>?
+                                      </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                                    <div class="panel-body">
+                                        <img src="assets/images/desarrollo-cognitivo.jpg" alt="Desarrollo Cognitivo" class="col xs-6 col-sm-3 col-md-3 img-rounded" />
+                                        <p>El <i>Desarrollo Cognitivo</i> se refiere al desarrollo de la capacidad de pensar y razonar. Los niños desarrollan la capacidad de pensar en forma concreta (operaciones concretas) como por ejemplo, combinar (sumar),
+                                            separar (restar o dividir), ordenar (alfabéticamente o por clase) y transformar objetos y acciones. Estas operaciones también son llamadas concretas porque los objetos y hechos sobre los que se está pensando
+                                            se encuentra físicamente presentes frente al niño.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion end -->
+                            <!-- Accordion start --->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                    <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                        ¿Quien es <i>Jean Piaget</i>?
+                                      </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                                    <div class="panel-body">
+                                        <img src="assets/images/Jean_Piaget.png" alt="Jean Piaget (1896-1980)" class="col xs-6 col-sm-3 col-md-3 img-rounded" />
+                                        <p><i>Jean William Fritz Piaget (1896-1980)</i> fue uno de los psicólogos e investigadores más importantes de la historia, y a él le debemos gran parte de lo que hemos ido descubriendo por medio de la psicología del
+                                            desarrollo. Dedicó gran parte de su vida a investigar el modo en el que evolucionan tanto nuestro conocimiento acerca del entorno como nuestros patrones de pensamiento dependiendo de la etapa de crecimiento
+                                            en la que nos encontramos, y es especialmente conocido por haber propuesto varias etapas de desarrollo cognitivo por las que pasamos todos los seres humanos a medida que crecemos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion end -->
+                            <!-- Accordion start --->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                    <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                        ¿Cuales son las pautas generales al proceso de <i>Desarrollo Cognitivo</i>?
+                                      </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                                    <div class="panel-body">
+                                        <p>* Al igual que en el proceso de desarrollo físico, y crecimiento del cuerpo, cuando hablamos de desarrollo psicológico, cada persona sigue su propio ritmo personal. El camino de desarrollo de cada uno es único.
+                                            Es importante ser flexibles y pacientes en este aspecto y respetar los diferentes ritmos de desarrollo.</p>
+                                        <p>* Proporciona estímulos para favorecer el desarrollo, pero ten en cuenta que hay procesos que no puede alcanzar. No fuerces al niño antes de tiempo para que alcance metas que no son adecuadas.</p>
+                                        <p>* Deja que sean ellos los que reflexionen y piensen. Si lo haces por ellos, corres el riesgo de dejarle acomodado en una etapa más tiempo del necesario. Por lo tanto fomenta la evolución de su pensamiento, dejándole
+                                            solo ante el problema, déjale que piense y en todo caso haz de guía para que alcance la solución, pero no se lo resuelvas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion end -->
+                            <!-- Accordion start --->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                    <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                        ¿Qué podemos hacer para favorecer el <i>Desarrollo Cognitivo</i>?
+                                      </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>Enriquece las reacciones circulares, trata de que después de determinadas acciones del bebé ocurra siempre el mismo resultado.</li>
+                                            <li>Permítele enriquecer estas reacciones circulares y elaborar esquemas mentales, introduce pequeñas modificaciones. Veamos un ejemplo, si el bebé agita el sonajero y repite la acción porque sabe que siempre ocurre
+                                                el mismo resultado, un sonido que le gusta, coge el sonajero y golpéalo contra la mesa por ejemplo, para que el bebé vea como se producen modificaciones del hábito, empezará a explorar.</li>
+                                            <li>Favorece el aprendizaje por ensayo error, para ello déjale experimentar, si el niño juega con algún objeto, déjale que explore, que ensaye con él.</li>
+                                            <li>Proporciónale objetos que le permitan explorar el mundo más allá de sí mismo. Utiliza para ello todo tipo de juguetes u objetos llamativos para él.</li>
+                                            <li>A partir de los 18 meses, comienza a jugar con él a esconder objetos. Muéstrale el objeto y escóndelo por ejemplo bajo una servilleta, búscalo tú y alza la servilleta enseñándole el objeto escondido. A continuación
+                                                escóndelo de nuevo, y deja que sea el niño el que busque el objeto escondido.</li>
+                                            <li>Ten en cuenta en todo momento las características de la etapa y trata de adaptarte al pensamiento del niño.</li>
+                                            <li>Emplea el juego simbólico. Juega con ellos a simbolizar cosas. Puedes jugar a los médicos, a las tiendas, etc.</li>
+                                            <li>Aprovecha la actividad lúdica para Favorecer las representaciones y la función simbólica.</li>
+                                            <li>Permite la exploración, exploración y experimentación.</li>
+                                            <li>Al final de la etapa, a partir de los 5 años, intentaremos estimular al niño, pero con paciencia y sin forzar su ritmo, para que vaya adquiriendo procesos de la siguiente etapa. Intentaremos ayudarle a clasificar
+                                                por ejemplo por colores, a explicarle nuestros puntos de vista, etc. Pero sin forzar, no debemos pretender que el pequeño lo comprenda pues tal vez no esté preparado para ello, pero le iremos introduciendo
+                                                en una nueva forma de pensamiento que él sólo ira alcanzando y descubriendo.</li>
+                                            <li>Desarrolla su capacidad de pensamiento reversible. Puedes emplear para ello por ejemplo problemas de matemáticas, emplea problemas distintos pero similares, déjale que los resuelva y le ayudas diciéndole “recuerdas
+                                                el problema de ayer ¿cómo lo resolviste? ¿Qué hiciste mal?” poco a poco haz que los problemas sean menos similares.</li>
+                                            <li>Ayúdale a identificar y plantear interrogantes a partir de la experiencia cotidiana. Aprovecha para ello cualquier hecho, hazle preguntas y espera a que el responda, pídele que te diga que se pregunta él ante
+                                                ese hecho.</li>
+                                            <li>Haz que comprenda y establezca relaciones entre hechos y fenómenos del entorno natural y social. Utiliza fenómenos relacionados y explícale las relaciones causales entre los mismos. Más adelante empieza a hacerle
+                                                preguntas ¿Por qué crees que ocurre esto? ¿con que crees que está relacionado?</li>
+                                            <li>Dale oportunidades para que razone todo lo posible, sobre hechos concretos.</li>
+                                            <li>Apóyate en lo real y trata de hacerle pasar de lo concreto a lo abstracto. Para ello primero transformaremos lo abstracto en lo concreto, emplea objetos cotidianos para ejemplificar los conceptos abstractos,
+                                                las cantidades por ejemplo, haz que vean que el número 3 (concepto abstracto) significa que tienes una cantidad determinada de algo, por ejemplo 3 canicas (objeto concreto). Después generaliza ese concepto
+                                                abstracto con varios ejemplos concretos, muéstrale que el número 3 simboliza 3 canicas, 3 naranjas, 3 lápices, 3 dados, etc.</li>
+                                            <li>Poco a poco introduce otros conceptos, como el de doble, mitad, etc. y procedes del mismo modo, con objetos concretos le muestras lo que es doble y lo generalizas con mas objetos concretos.</li>
+                                            <li>Emplea hechos cotidianos. Pregúntale que factores han provocado eso.</li>
+                                            <li>Haz debates con él. Deja que se exprese, exponle tu forma de pensar.</li>
+                                            <li>Analiza problemas éticos.</li>
+                                            <li>Pasa de lo concreto a lo abstracto, como en el periodo anterior, primero transforma lo abstracto en ejemplos concretos y después estos los generalizas a lo abstracto.</li>
+                                            <li>Ayúdale a elaborar hipótesis y deducciones.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion end -->
+                        </div>
+                        <!-- Collapse accordion end -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+        <!-- Modal Video start -->
+        <div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalVideoLabel">Videos Educativos...</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Media Start -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="https://youtu.be/QZXBi7Vuv3c" target="_blank">
+                                    <img class="media-object" src="https://i.ytimg.com/vi/QZXBi7Vuv3c/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=PCn2dzhcUVIBFdFQjBSZaFJyJ-k" alt="Portal Educapeques TV" width="150px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Etapas del Desarrollo Cognitivo del Niño</h4> Es importante que conozcamos cuales son estas etapas del desarrollo cognitivo y qué las caracteriza para entender la mentalidad de los niños y niñas...
+                            </div>
+                        </div>
+                        <!-- Media End -->
+                        <!-- Media Start -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="https://youtu.be/J7LFJnWZH74" target="_blank">
+                                    <img class="media-object" src="https://i.ytimg.com/vi/J7LFJnWZH74/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=AtoFxttoMsdHdhkA9v0-PljXan8" alt="Luis Rodriguez Zalazar" width="150px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Teoría del Desarrollo Cognitivo de Piaget</h4> Ideas Clave: La cognición, Los esquemas, Adaptación (Asimilación y Acomodación)...
+                            </div>
+                        </div>
+                        <!-- Media End -->
+                        <!-- Media Start -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="https://youtu.be/nLwAf4xHcmM" target="_blank">
+                                    <img class="media-object" src="https://i.ytimg.com/vi/nLwAf4xHcmM/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=moet2z811-0-wN5E5AaRq-xZ4Fg" alt="Daniela Calvo" width="150px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Desarrollo Cognitivo en la Adolescencia</h4> Desarrollo cognitivo en la adolescencia...
+                            </div>
+                        </div>
+                        <!-- Media End -->
+                        <!-- Media Start -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="https://youtu.be/1uXHNI9MTLE" target="_blank">
+                                    <img class="media-object" src="https://i.ytimg.com/vi/1uXHNI9MTLE/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=V_iE0ITt8Xi0at77vGxoUjZncWI" alt="Nereida Lahoz" width="150px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Psicologia del Desarrollo Cogntivo</h4> Desarrollo cognitivo...
+                            </div>
+                        </div>
+                        <!-- Media End -->
+                        <!-- Media Start -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="https://youtu.be/vRalfk5KFVw" target="_blank">
+                                    <img class="media-object" src="https://i.ytimg.com/vi/vRalfk5KFVw/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=lFlBE3_N5OZ4oZ7cHRCkOfysNKs" alt="Clase Psicologia" width="150px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">El Desarrollo Cognitivo del Bebe</h4> Desarrollo cognitivo del bebe...
+                            </div>
+                        </div>
+                        <!-- Media End -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video end -->
+    </footer>
+    <!-- Scripts libraries -->
+    <script type="text/javascript" src="assets/js/jquery.js" title="jQuery v1.12.2"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js" title="Bootstrap v3.3.7"></script>
+    <script type="text/javascript" src="assets/js/app.js" title=""></script>
 </body>
+
 </html>
