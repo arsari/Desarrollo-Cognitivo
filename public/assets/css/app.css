@@ -105,17 +105,16 @@ body {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     background: #F3E5F5;
-    font-size: 18px;
+    font-size: 1.25em;
 }
 
 #myHeader #welcome img {
     width: 12rem;
-    padding: 2px 5px;
+    padding: 0px 10px 0px 5px;
     text-align: center;
 }
 
 #myHeader #welcome p {
-    display: -webkit-box;
     margin-bottom: 0;
     padding-right: 5px;
     padding-left: 10px;
@@ -279,7 +278,7 @@ body {
     color: #333333;
     border: 15px solid #dddddd;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
 #myContent #collapse-1 .well {
@@ -306,9 +305,8 @@ body {
 }
 
 #myContent #collapse-1 img {
-    width: 20rem;
-    padding: 5px 10px;
-
+    width: 9em;
+    padding: 1px 10px 0px 0px;
     border-radius: 25px;
 }
 
@@ -318,9 +316,10 @@ body {
 }
 
 #myContent #collapse-2 img {
-    width: 28rem;
-    padding: 5px 15px;
+    width: 13em;
+    padding: 5px 0px 0px 10px;
     border-radius: 25px;
+    float: right;
 }
 
 #myContent #collapse-3 .well {
@@ -329,8 +328,8 @@ body {
 }
 
 #myContent #collapse-3 img {
-    width: 25rem;
-    padding: 5px 15px;
+    width: 11em;
+    padding: 5px 10px 0px 0px;
     border-radius: 25px;
 }
 
@@ -340,8 +339,8 @@ body {
 }
 
 #myContent #collapse-4 img {
-    width: 26rem;
-    padding: 5px 10px;
+    width: 12em;
+    padding: 5px 10px 0px 0px;
     border-radius: 25px;
 }
 
@@ -349,14 +348,15 @@ body {
     display: none;
     position: fixed;
     right: 15px;
-    bottom: 5em;
+    bottom: 14em;
     padding: 0.25em;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #d9534f;
-    font-size: 15px;
+    font-size: 13px;
+    box-shadow: 0px 4px 5px darkslategrey;
 }
 
 #myContent .back_to_top:hover {
@@ -479,10 +479,12 @@ body {
 
 #myModal .modal-header {
     background-color: #01579B;
+    text-align: left;
 }
 
 #myModal .panel-heading {
     background: #039BE5;
+    text-align: left;
 }
 
 #myModal .modal-body {
@@ -515,13 +517,13 @@ body {
 }
 
 #myModal #collapseEleven img {
-    width: 34%;
+    width: 13em;
     margin: 0px 8px 0px 0px;
     padding: 0;
 }
 
 #myModal #collapseTwelve img {
-    width: 22%;
+    width: 9em;
     margin: 0px 10px 0px 0;
     padding: 0;
 }
@@ -532,6 +534,7 @@ body {
 
 #myModalVideo .modal-header {
     background-color: #F44336;
+    text-align: left;
 }
 
 #myModalVideo .modal-footer {
@@ -541,4 +544,5 @@ body {
 #myModalVideo .modal-body {
     color: #333333;
     background-color: #FFCDD2;
+    text-align: center;
 }

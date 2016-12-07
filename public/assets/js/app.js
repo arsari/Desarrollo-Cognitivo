@@ -43,8 +43,8 @@ $(document).ready(function() {
     $('#collapse-3').removeClass('in');
   });
 
-// carousel-caption onClick location
-  $('.carousel-caption').click(function() {
+// onClick go to location
+  $('.wl').click(function() {
     document.location = '#welcome-bar';
   });
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 // .back_to_top floating button
   $(function() {
-    var offset = 300;
+    var offset = 260;
     var duration = 500;
 
     $(window).scroll(function() {
@@ -104,6 +104,11 @@ $(document).ready(function() {
     $('.back_to_top').click(function(event) {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, duration);
+        $('#welcome').removeClass('in');
+        $('#collapse-1').removeClass('in');
+        $('#collapse-2').removeClass('in');
+        $('#collapse-3').removeClass('in');
+        $('#collapse-4').removeClass('in');
         return false;
     })
   });
