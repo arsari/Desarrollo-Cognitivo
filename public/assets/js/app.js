@@ -6,37 +6,32 @@
 
 $(document).ready(function() {
 
-// section-panels toggle
+// panels toggle
   $('#welcome-bar').click(function() {
-    $('#welcome-bar').addClass('active');
     $('#collapse-1').removeClass('in');
     $('#collapse-2').removeClass('in');
     $('#collapse-3').removeClass('in');
     $('#collapse-4').removeClass('in');
   });
   $('#section-1').click(function() {
-    $('#section-1').addClass('active');
     $('#welcome').removeClass('in');
     $('#collapse-2').removeClass('in');
     $('#collapse-3').removeClass('in');
     $('#collapse-4').removeClass('in');
   });
   $('#section-2').click(function() {
-    $('#section-2').addClass('active');
     $('#welcome').removeClass('in');
     $('#collapse-1').removeClass('in');
     $('#collapse-3').removeClass('in');
     $('#collapse-4').removeClass('in');
   });
   $('#section-3').click(function() {
-    $('#section-3').addClass('active');
     $('#welcome').removeClass('in');
     $('#collapse-1').removeClass('in');
     $('#collapse-2').removeClass('in');
     $('#collapse-4').removeClass('in');
   });
   $('#section-4').click(function() {
-    $('#section-4').addClass('active');
     $('#welcome').removeClass('in');
     $('#collapse-1').removeClass('in');
     $('#collapse-2').removeClass('in');
@@ -46,9 +41,11 @@ $(document).ready(function() {
 // onClick go to location
   $('.wl').click(function() {
     document.location = '#welcome-bar';
+    $('#collapse-1').removeClass('in');
+    $('#collapse-2').removeClass('in');
+    $('#collapse-3').removeClass('in');
+    $('#collapse-4').removeClass('in');
   });
-
-// myFooter etapas links onClick location
   $('#sl-1').click(function() {
     document.location = '#section-1';
     $('#welcome').removeClass('in');
@@ -79,12 +76,12 @@ $(document).ready(function() {
   });
 
 // popover plug-in
-  $(function () {
+  $(function() {
     $('[data-toggle="popover"]').popover();
   });
 
 // tooltip plug-in
-  $(function () {
+  $(function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
 
@@ -110,6 +107,6 @@ $(document).ready(function() {
         $('#collapse-3').removeClass('in');
         $('#collapse-4').removeClass('in');
         return false;
-    })
+    });
   });
 });

@@ -11,7 +11,7 @@
     <meta name="keywords" content="cognitivo, codetrotters, web development, final project" />
     <meta name="author" content="Arturo Santiago-Rivera" />
     <meta name="designer" content="Arturo Santiago-Rivera" />
-    <!-- CSS libraries -->
+    <!-- CSS & Fonts libraries -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="all" title="Bootstrap v3.3.7" />
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css" media="all" title="" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" title="" />
@@ -32,14 +32,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Grupo Arsari</a>
+                    <a class="navbar-brand" href="#">Grupo Arsari <b> | </b><span> v1.0.121416<span></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#myContent">Estadios</a></li>
+                        <li><a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome" class="wl">Bienvenida</a></li>
+                        <li><a href="#myContent" mytitle="Etapas del Desarrollo Cognitivo">Estadios</a></li>
+                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal" mytitle="Preguntas Frecuentes">Preguntas</a></li>
                         <li><a href="#myModalVideo" data-toggle="modal" data-target="#myModalVideo">Videos</a></li>
-                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal">FAQ</a></li>
                         <li><a href="#disclaimer">Relevo</a></li>
                     </ul>
                 </div>
@@ -49,56 +50,83 @@
         </nav>
         <!-- Navbar end -->
         <div class="container">
-            <!-- Carousel start -->
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-caption">
-                    <a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome" class="wl">Desarollo Cognitivo<br>del Niño</a>
+            <div class="row">
+                <!-- Carousel start -->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="assets/images/image1.png" alt="Vianca">
+                            <div class="carousel-caption">
+                                <a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome" class="wl">Desarollo Cognitivo<br>del Niño</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image2.png" alt="Anabella">
+                            <div class="carousel-caption">
+                                <p>Las capacidades cognitivas como la memoria, la atención, el lenguaje,la percepción, la solución de problemas o la inteligencia y la planificación involucran funciones cerebrales sofisticadas y únicas.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image3.png" alt="Vianca">
+                            <div class="carousel-caption">
+                                <p>El desarrollo cognitivo se enfoca en los procedimientos intelectuales y en las conductas que emanan de estos procesos.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image4.png" alt="Anabella">
+                            <div class="carousel-caption">
+                                <p>El desarrollo cognitivo es una consecuencia de la voluntad de las personas por entender la realidad y desempeñarse en sociedad.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image5.png" alt="Vianca">
+                            <div class="carousel-caption">
+                                <a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome" class="wl">Desarollo Cognitivo<br>del Niño</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image6.png" alt="Anabella">
+                            <div class="carousel-caption">
+                                <p>Este desarrollo está vinculado a la capacidad natural que tienen los seres humanos para adaptarse e integrarse a su ambiente.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image7.png" alt="Vianca">
+                            <div class="carousel-caption">
+                                <p>Sobre el aprendizaje cognitivo han hablado múltiples autores, entre los que se encuentran Piaget, Tolman, Gestalt y Bandura.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/image8.png" alt="Anabella">
+                            <div class="carousel-caption">
+                                <p>Todos coinciden en que es el proceso en el que la información entra al sistema cognitivo, es decir de razonamiento, es procesada y causa una determinada reacción en dicha persona.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="assets/images/image1.png" alt="Vianca">
-                    </div>
-                    <div class="item">
-                        <img src="assets/images/image2.png" alt="Vianca">
-                    </div>
-                    <div class="item">
-                        <img src="assets/images/image3.png" alt="Anabella">
-                    </div>
-                    <div class="item">
-                        <img src="assets/images/image4.png" alt="Anabella">
-                    </div>
-                    <div class="item">
-                        <img src="assets/images/image5.png" alt="Anabella">
-                    </div>
-                    <div class="item">
-                        <img src="assets/images/image6.png" alt="Anabella">
-                    </div>
-                    <div class="item">
-                        <img src="assets/images/image7.png" alt="Anabella">
-                    </div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <!-- Carousel end -->
             </div>
-            <!-- Carousel end -->
         </div>
         <div class="container">
             <div class="row">
@@ -108,10 +136,10 @@
                     </a>
                     <div class="col-xs-12 col-sm-12 col-md-12 collapse" id="welcome">
                         <div class="well">
-                            <img src="assets/images/image6.png" alt="Anabella" class="col-xs-12 col-sm-3 col-md-3 img-circle img-responsive" />
-                            <p>El proyecto de pagina Web aqui creado, esta motivado en el aprendizaje del desarrollo psicológico de mis nietas, Anabella y Vianca, basado en la teoría del desarrollo cognitivo, o tambien llamado desarrollo cognoscitivo, de
-                                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Jean William Fritz Piaget (1896-1980)" data-content="Famoso por sus aportes al estudio de la infancia y por su teoría constructivista del desarrollo de la inteligencia.">
-                                <span>Jean Piaget</span></a>. La teoría de Piaget es una sobre la naturaleza y el desarrollo de la inteligencia humana. Piaget creía que la infancia del individuo juega un papel vital y activo con el crecimiento de
+                            <img src="assets/images/image7.png" alt="Vianca" class="col-xs-6 col-sm-3 col-md-3 img-circle img-responsive" />
+                            <p>El proyecto de pagina Web aqui creado, esta motivado en el aprendizaje del desarrollo pensamiento de mis nietas, Anabella y Vianca, basado en la teoría del desarrollo cognitivo, o tambien llamado desarrollo cognoscitivo, de
+                                <a tabindex="0" role="button" data-placement="auto left" data-toggle="popover" data-trigger="focus" title="Jean William Fritz Piaget (1896-1980)" data-content="Famoso por sus aportes al estudio de la infancia y por su teoría constructivista del desarrollo de la inteligencia.">
+                                    <span>Jean Piaget</span></a>. La teoría de Piaget es una sobre la naturaleza y el desarrollo de la inteligencia humana. Piaget creía que la infancia del individuo juega un papel vital y activo con el crecimiento de
                                 la inteligencia, y que el niño aprende a través de hacer y explorar activamente. Las fases de desarrollo expuestas por Piaget forman una secuencia de cuatro etapas que a su vez se dividen en otras subetapas. Estas cuatro
                                 etapas principales quedan enumeradas y explicadas brevemente a continuación.
                             </p>
@@ -131,15 +159,16 @@
                         <h3><em>(0 - 2 años)</em></h3>
                     </a>
                     <!-- Collapse start -->
-                    <div class="container">
+                    <div class="container collapse-left">
                         <div class="col-xs-12 col-sm-10 col-md-10 collapse" id="collapse-1">
                             <div class="well">
-                                <img src="assets/images/etapa1.jpg" alt="Sensoriomotor" class="col-xs-12 col-sm-3 col-md-3 img-responsive" />
-                                <p>La inteligencia de los niños y niñas es práctica, centrada en el sí mismo, y en el momento presente en el aquí y ahora. El niño se relaciona con el mundo a través de los sentidos y la acción. A lo largo de este periodo
-                                    se producen importantes adquisiciones, la acción de los bebés evoluciona desde los reflejos innatos, que se convierten en hábitos. Poco después aparecen las <a type="button" class="note" data-toggle="tooltip" data-placement="top"
-                                    title="Acciones encaminadas a mantener un resultado.">reacciones circulares</a> y con estas los primeros esquemas mentales. Las seis sub-etapas del periodo sensoriomotor van pasando de una a otra en medida que se van
-                                    desarrollando los esquemas del bebé. Un esquema es un patrón organizado de la conducta. Los primeros reflejos simples, progresan a conductas con una finalidad. Cuando estas son placenteras el bebé las repite y crea
-                                    un ciclo que Piaget denomina reacciones circulares primarias.</p>
+                                <video type="video/mp4" src="assets/images/anabella-video.m4v" autoplay muted loop poster class="col-xs-6 col-sm-3 col-md-3"></video>
+                                <p>Esta etapa abarca desde el nacimiento del individuo hasta los 2 años de edad. Es el aprendizaje que se lleva a cabo a través de los sentidos y las posibles representaciones que la memoria haga de los objetos y situaciones
+                                    a las que el individuo se enfrenta. En esta etapa la imitación es la respuesta al aprendizaje. La inteligencia de los niños y niñas es práctica, centrada en el sí mismo, y en el momento presente en el aquí y ahora.
+                                    El niño se relaciona con el mundo a través de los sentidos y la acción.<br><br>A lo largo de este periodo se producen importantes adquisiciones, la acción de los bebés evoluciona desde los reflejos innatos, que se convierten
+                                    en hábitos. Poco después aparecen las <a type="button" class="note" data-toggle="tooltip" data-placement="top" title="Acciones encaminadas a mantener un resultado.">reacciones circulares</a> y con estas los primeros
+                                    esquemas mentales. Las seis sub-etapas del periodo sensoriomotor van pasando de una a otra en medida que se van desarrollando los esquemas del bebé. Un esquema es un patrón organizado de la conducta. Los primeros reflejos
+                                    simples, progresan a conductas con una finalidad. Cuando estas son placenteras el bebé las repite y crea un ciclo que Piaget denomina reacciones circulares primarias.</p>
                                 <!-- Collapse accordion start -->
                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                     <!-- Accordion start --->
@@ -191,8 +220,8 @@
                                             <div class="panel-body">
                                                 <p>Reacciones circulares secundarias se dice que es el principio de la acción intencional. Coincide con el momento en el que nace su interés por alcanzar objetos manipulables en el <a type="button" class="note"
                                                         data-toggle="tooltip" data-placement="top" title="biberón, chupa, etc.">ambiente</a> se repiten los comportamientos para ver resultados ajenos al cuerpo. En esta etapa empieza a desarrollarse la permanencia
-                                                    del objeto. Lo busca si puede ver una parte de él. Imitación: es capaz de realizar imitaciones voluntarias y sistemáticas de sonidos y movimientos hechos por un modelo. Sólo pueden ser conductas que
-                                                    estén en su repertorio.</p>
+                                                    del objeto. Lo busca si puede ver una parte de él.<br><br>Imitación: es capaz de realizar imitaciones voluntarias y sistemáticas de sonidos y movimientos hechos por un modelo. Sólo pueden ser conductas
+                                                    que estén en su repertorio.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -209,7 +238,7 @@
                                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                             <div class="panel-body">
                                                 <p>Coordinación de esquemas secundarios y aplicación a situaciones nuevas la intencionalidad es plena, las conductas tienen un propósito definido y los <a type="button" class="note" data-toggle="tooltip" data-placement="top"
-                                                    title="girar la cabeza, abrir la mano, etc.">esquemas motores</a> se coordinan para lograr fines (que le den algo) es capaz de resolver problemas nuevos a partir de experiencias pasadas. Se imagina mentalmente
+                                                        title="girar la cabeza, abrir la mano, etc.">esquemas motores</a> se coordinan para lograr fines (que le den algo) capaz de resolver problemas nuevos a partir de experiencias pasadas. Se imagina mentalmente
                                                     lo que quiere y lo busca, planificando formas de conseguirlo. Busca objetos ocultos, pero con limitaciones. Si se esconde un objeto en A y luego en B, lo busca en A. Imita sonidos, movimientos y gestos
                                                     nuevos a él.</p>
                                             </div>
@@ -248,12 +277,12 @@
                                             <div class="panel-body">
                                                 <p>Invención de nuevos medios a través de combinaciones mentales. En esta subetapa el niño piensa (planifica) antes de hacer las cosas. Elabora imágenes mentales de los hechos y no actúa sólo por ensayo - error.
                                                     Permanencia del objeto absolutamente desarrollada, incluso busca lo que no ha visto esconder. Los niños comienzan a entender la información que perciben sus sentidos y su capacidad de interactuar con
-                                                    el mundo. Durante esta etapa, los niños aprenden a manipular objetos, aunque no pueden entender la permanencia de estos objetos si no están dentro del alcance de sus sentidos. Es decir, una vez que un
-                                                    objeto desaparece de la vista del niño o niña, no puede entender que todavía existe ese objeto (o persona). Por este motivo les resulta tan atrayente y sorprendente el juego al que muchos adultos juegan
-                                                    con sus hijos, consistente en esconder su cara tras un objeto, como un cojín, y luego volver a “aparecer”. Es un juego que contribuye, además, a que aprendan la permanencia del objeto, que es uno de
-                                                    los mayores logros de esta etapa: la capacidad de entender que estos objetos continúan existiendo aunque no pueda verlos. Esto incluye la capacidad para entender que cuando la madre sale de la habitación,
-                                                    regresará, lo cual aumenta su sensación de seguridad. Esta capacidad suelen adquirirla hacia el final de esta etapa y representa la habilidad para mantener una imagen mental del objeto (o persona) sin
-                                                    percibirlo.
+                                                    el mundo.<br><br>Durante esta etapa, los niños aprenden a manipular objetos, aunque no pueden entender la permanencia de estos objetos si no están dentro del alcance de sus sentidos. Es decir, una vez
+                                                    que un objeto desaparece de la vista del niño o niña, no puede entender que todavía existe ese objeto (o persona). Por este motivo les resulta tan atrayente y sorprendente el juego al que muchos adultos
+                                                    juegan con sus hijos, consistente en esconder su cara tras un objeto, como un cojín, y luego volver a “aparecer”.<br><br>Es un juego que contribuye, además, a que aprendan la permanencia del objeto,
+                                                    que es uno de los mayores logros de esta etapa: la capacidad de entender que estos objetos continúan existiendo aunque no pueda verlos. Esto incluye la capacidad para entender que cuando la madre sale
+                                                    de la habitación, regresará, lo cual aumenta su sensación de seguridad. Esta capacidad suelen adquirirla hacia el final de esta etapa y representa la habilidad para mantener una imagen mental del objeto
+                                                    (o persona) sin percibirlo.
                                                 </p>
                                             </div>
                                         </div>
@@ -275,11 +304,11 @@
                     <div class="container collapse-right">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 collapse" id="collapse-2">
                             <div class="well">
-                                <img src="assets/images/etapa2.jpg" alt="Preoperatorio" class="col-xs-12 col-sm-3 col-md-3 img-responsive" />
+                                <img src="assets/images/etapa2.jpg" alt="Preoperatorio" class="col-xs-6 col-sm-3 col-md-3 img-responsive" />
                                 <p>Se produce un avance en la forma de pensar. En esta etapa se produce un adelanto extraordinario en la actividad representacional y aparece la función simbólica, los niños y niñas utilizan símbolos para representar objetos,
                                     lugares y personas, puede retroceder y avanzar en el tiempo. El pensamiento va más allá de los actos y los hechos inmediatos. Pero en esta etapa el pensamiento es todavía rudimentario. Durante esta etapa, los niños
-                                    aprenden cómo interactuar con su ambiente de una manera más compleja mediante el uso de palabras y de imágenes mentales.<br><br>Esta etapa está marcada por el egocentrismo, o la creencia de que todas las personas ven el mundo
-                                    de la misma manera que él o ella. También creen que los objetos inanimados tienen las mismas percepciones que ellos, y pueden ver, sentir, escuchar, etc. Un segundo factor importante en esta etapa es la Conservación,
+                                    aprenden cómo interactuar con su ambiente de una manera más compleja mediante el uso de palabras y de imágenes mentales.<br><br>Esta etapa está marcada por el egocentrismo, o la creencia de que todas las personas ven
+                                    el mundo de la misma manera que él o ella. También creen que los objetos inanimados tienen las mismas percepciones que ellos, y pueden ver, sentir, escuchar, etc. Un segundo factor importante en esta etapa es la Conservación,
                                     que es la capacidad para entender que la cantidad no cambia cuando la forma cambia. Es decir, si el agua contenida en un vaso corto y ancho se vierte en un vaso alto y fino, los niños en esta etapa creerán que el vaso
                                     más alto contiene más agua debido solamente a su altura. Esto es debido a la incapacidad de los niños de entender la reversibilidad y debido a que se centran en sólo un aspecto del estímulo, por ejemplo la altura, sin
                                     tener en cuenta otros aspectos como la anchura.</p>
@@ -295,16 +324,16 @@
                         <h2>Estadio Operaciones Concretas</h2>
                         <h3><em>(7 - 12 años)</em></h3>
                     </a>
-                    <div class="container">
+                    <div class="container collapse-left">
                         <div class="col-xs-12 col-sm-10 col-md-10 collapse" id="collapse-3">
                             <div class="well">
-                                <img src="assets/images/etapa3.jpg" alt="Operaciones Concretas" class="col-xs-12 col-sm-3 col-md-3 img-responsive" />
+                                <img src="assets/images/etapa3.jpg" alt="Operaciones Concretas" class="col-xs-6 col-sm-3 col-md-3 img-responsive" />
                                 <p>Es una etapa que se sustenta en los logros de las etapas anteriores y se logran importantes avances en el pensamiento. Los niños y niñas adquieren mayores nociones y superan cualitativamente las posibilidades de su pensamiento.
-                                    El pensamiento se convierte en lógico. En esta etapa, comienza el razonamiento, los pensamientos dejan de ser intuitivos y se basan en el razonamiento. Se aplica la lógica y comienza a pensar en lo posible. El pensamiento
-                                    es reversible, flexible y mucho más complejo. es la disminución gradual del pensamiento egocéntrico y por la capacidad creciente de centrarse en más de un aspecto de un estímulo. Pueden entender el concepto de agrupar,
-                                    sabiendo que un perro pequeño y un perro grande siguen siendo ambos perros, o que los diversos tipos de monedas y los billetes forman parte del concepto más amplio de dinero. Sólo pueden aplicar esta nueva comprensión
-                                    a los objetos concretos (aquellos que han experimentado con sus sentidos). Es decir, los objetos imaginados o los que no han visto, oído, o tocado, continúan siendo algo místicos para estos niños, y el pensamiento abstracto
-                                    tiene todavía que desarrollarse.</p>
+                                    El pensamiento se convierte en lógico.<br><br>En esta etapa, comienza el razonamiento, los pensamientos dejan de ser intuitivos y se basan en el razonamiento. Se aplica la lógica y comienza a pensar en lo posible. El
+                                    pensamiento es reversible, flexible y mucho más complejo. es la disminución gradual del pensamiento egocéntrico y por la capacidad creciente de centrarse en más de un aspecto de un estímulo. Pueden entender el concepto
+                                    de agrupar, sabiendo que un perro pequeño y un perro grande siguen siendo ambos perros, o que los diversos tipos de monedas y los billetes forman parte del concepto más amplio de dinero.<br><br>Sólo pueden aplicar esta
+                                    nueva comprensión a los objetos concretos (aquellos que han experimentado con sus sentidos). Es decir, los objetos imaginados o los que no han visto, oído, o tocado, continúan siendo algo místicos para estos niños,
+                                    y el pensamiento abstracto tiene todavía que desarrollarse.</p>
                             </div>
                         </div>
                     </div>
@@ -318,12 +347,14 @@
                     <div class="container collapse-right">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 collapse" id="collapse-4">
                             <div class="well">
-                                <img src="assets/images/etapa4.jpg" alt="Operaciones Formales" class="col-xs-12 col-sm-3 col-md-3 img-responsive" />
+                                <img src="assets/images/etapa4.jpg" alt="Operaciones Formales" class="col-xs-6 col-sm-3 col-md-3 img-responsive" />
                                 <p>Es la etapa final del <a type="button" class="note" data-toggle="tooltip" data-placement="bottom" title="Desde los doce años en adelante.">desarrollo cognitivo</a>, los niños comienzan a desarrollar una visión más abstracta
                                     del mundo y a utilizar la lógica formal. Se logra la abstracción sobre conocimientos concretos observados, lo cual permite emplear el razonamiento lógico inductivo y deductivo. Puede formular hipótesis, tiene en cuenta
-                                    el mundo de lo posible. Pueden aplicar la reversibilidad y la conservación a las situaciones tanto reales como imaginadas. También desarrollan una mayor comprensión del mundo y de la idea de causa y efecto. Esta etapa
-                                    se caracteriza por la capacidad para formular hipótesis y ponerlas a prueba para encontrar la solución a un problema. Otra característica del individuo en esta etapa es su capacidad para razonar en contra de los hechos.
-                                    Es decir, si le dan una afirmación y le piden que la utilice como la base de una discusión, es capaz de realizar la tarea. Por ejemplo, pueden razonar sobre la siguiente pregunta: ¿Qué pasaría si el cielo fuese rojo?”.</p>
+                                    el mundo de lo posible. Pueden aplicar la reversibilidad y la conservación a las situaciones tanto reales como imaginadas. También desarrollan una mayor comprensión del mundo y de la idea de causa y efecto.<br><br>Esta
+                                    etapa se caracteriza por la capacidad para formular hipótesis y ponerlas a prueba para encontrar la solución a un problema. Otra característica del individuo en esta etapa es su capacidad para razonar en contra de los
+                                    hechos. Es decir, si le dan una afirmación y le piden que la utilice como la base de una discusión, es capaz de realizar la tarea. Por ejemplo, pueden razonar sobre la siguiente pregunta: ¿Qué pasaría si el cielo fuese
+                                    rojo?”. La inteligencia se demuestra a través del uso lógico de los símbolos relacionados con los conceptos abstractos. Esta forma de pensamiento incluye "suposiciones que no tienen ninguna relación necesaria con la
+                                    realidad." Durante este tiempo, las personas desarrollan la capacidad de pensar acerca de los conceptos abstractos.</p>
                             </div>
                         </div>
                     </div>
@@ -331,7 +362,7 @@
             </div>
         </div>
         <!-- back_to_top floating button start -->
-        <a class="back_to_top" href="#"><span class="fa-stack"><i class="fa fa-arrow-up" style=""></i></span></a>
+        <a class="back_to_top" href="#" title="Back to Top"><span class="fa-stack"><i class="fa fa-arrow-up" style=""></i></span></a>
         <!-- back_to_top floating button end -->
     </main>
     <footer id="myFooter">
@@ -340,9 +371,9 @@
                 <div class="col-sm-3">
                     <h5>Comenzando</h5>
                     <ul>
-                        <li><a href="#navbar-h">Inicio</a></li>
+                        <li><a href="#">Inicio</a></li>
                         <li><a role="button" data-toggle="collapse" href="#welcome" aria-expanded="false" aria-controls="welcome" class="wl">Bienvenida</a></li>
-                        <li><a href="#myContent">Etadios</a></li>
+                        <li><a href="#myContent" mytitle2="Etapas del Desarrollo Cognitivo">Estadios</a></li>
                         <li><a href="#myModalVideo" data-toggle="modal" data-target="#myModalVideo">Videos</a></li>
                     </ul>
                 </div>
@@ -358,9 +389,9 @@
                 <div class="col-sm-3">
                     <h5>Soporte</h5>
                     <ul>
-                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal">FAQ</a></li>
-                        <li><a href="http://www.arsari.com/about.html" target="_blank">Informacion Compañia</a></li>
-                        <li><a href="http://www.arsari.com/contact.html" target="_blank">Contactanos</a></li>
+                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal" mytitle2="Preguntas Frecuentes">Preguntas</a></li>
+                        <li><a href="#myModalForm" data-toggle="modal" data-target="#myModalForm">Contactanos</a></li>
+                        <li><a href="http://www.arsari.com/about.html" target="_blank">Sobre Nosotros</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 info" id="disclaimer">
@@ -372,7 +403,7 @@
         </div>
         <div class="second-bar">
             <div class="container">
-                <h2 class="logo"><a href="#"><img src="assets/images/galogo_trans.gif" alt="Grupo Arsari Logo"> </a></h2>
+                <h2 class="logo"><a href="#"><img src="assets/images/galogo_trans.gif" alt="Grupo Arsari Logo"></a></h2>
                 <div class="social-icons">
                     <a href="https://www.twitter.com/arq_asr" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.facebook.com/arq.asr" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -398,6 +429,24 @@
                         <div class="panel-group" id="modal-accordion" role="tablist" aria-multiselectable="true">
                             <!-- Accordion start --->
                             <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading15">
+                                    <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                        ¿Que es <i>Cognitivo</i>?
+                                      </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                                    <div class="panel-body">
+                                        <p>Lo <i>cognitivo</i> es aquello que pertenece o que está relacionado al conocimiento. Éste, a su vez, es el cúmulo de información que se dispone gracias a un proceso de aprendizaje o a la experiencia. La corriente
+                                            de la psicología encargada de la cognición es la psicología cognitiva, que analiza los procedimientos de la mente que tienen que ver con el conocimiento. Su finalidad es el estudio de los mecanismos que están
+                                            involucrados en la creación de conocimiento, desde los más simples hasta los más complejos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion end -->
+                            <!-- Accordion start --->
+                            <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingEleven">
                                     <h4 class="panel-title">
                                       <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
@@ -407,7 +456,7 @@
                                 </div>
                                 <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
                                     <div class="panel-body">
-                                        <img src="assets/images/desarrollo-cognitivo.jpg" alt="Desarrollo Cognitivo" class="col-xs-12 col-sm-3 col-md-3 img-rounded" />
+                                        <img src="assets/images/desarrollo-cognitivo.jpg" alt="Desarrollo Cognitivo" class="col-xs-6 col-sm-3 col-md-3 img-rounded" />
                                         <p>El <i>Desarrollo Cognitivo</i> se refiere al desarrollo de la capacidad de pensar y razonar. Los niños desarrollan la capacidad de pensar en forma concreta (operaciones concretas) como por ejemplo, combinar (sumar),
                                             separar (restar o dividir), ordenar (alfabéticamente o por clase) y transformar objetos y acciones. Estas operaciones también son llamadas concretas porque los objetos y hechos sobre los que se está pensando
                                             se encuentra físicamente presentes frente al niño.</p>
@@ -426,7 +475,7 @@
                                 </div>
                                 <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
                                     <div class="panel-body">
-                                        <img src="assets/images/Jean_Piaget.png" alt="Jean Piaget (1896-1980)" class="col-xs-12 col-sm-3 col-md-3 img-rounded" />
+                                        <img src="assets/images/Jean_Piaget.png" alt="Jean Piaget (1896-1980)" class="col-xs-6 col-sm-3 col-md-3 img-rounded" />
                                         <p><i>Jean William Fritz Piaget (1896-1980)</i> fue uno de los psicólogos e investigadores más importantes de la historia, y a él le debemos gran parte de lo que hemos ido descubriendo por medio de la psicología del
                                             desarrollo. Dedicó gran parte de su vida a investigar el modo en el que evolucionan tanto nuestro conocimiento acerca del entorno como nuestros patrones de pensamiento dependiendo de la etapa de crecimiento
                                             en la que nos encontramos, y es especialmente conocido por haber propuesto varias etapas de desarrollo cognitivo por las que pasamos todos los seres humanos a medida que crecemos.</p>
@@ -436,7 +485,7 @@
                             <!-- Accordion end -->
                             <!-- Accordion start --->
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                <div class="panel-heading" role="tab" id="heading13">
                                     <h4 class="panel-title">
                                       <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
                                         ¿Cuales son las pautas generales al proceso de <i>Desarrollo Cognitivo</i>?
@@ -456,7 +505,7 @@
                             <!-- Accordion end -->
                             <!-- Accordion start --->
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                <div class="panel-heading" role="tab" id="heading14">
                                     <h4 class="panel-title">
                                       <a role="button" data-toggle="collapse" data-parent="#modal-accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
                                         ¿Qué podemos hacer para favorecer el <i>Desarrollo Cognitivo</i>?
@@ -521,22 +570,22 @@
                     </div>
                     <div class="modal-body">
                         <div>
-                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/QZXBi7Vuv3c" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/QZXBi7Vuv3c" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <hr>
                         <div>
-                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/J7LFJnWZH74" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/J7LFJnWZH74" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <hr>
                         <div>
-                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/nLwAf4xHcmM" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/nLwAf4xHcmM" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <hr>
-                        <div >
-                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/KL6JcmlhtO8" frameborder="0" allowfullscreen></iframe>                        </div>
+                        <div>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/KL6JcmlhtO8" frameborder="0" allowfullscreen></iframe> </div>
                         <hr>
                         <div>
-                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/vRalfk5KFVw" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/vRalfk5KFVw" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -546,11 +595,44 @@
             </div>
         </div>
         <!-- Modal Video end -->
+        <!-- Modal Form start -->
+        <div class="modal fade" id="myModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalVideoLabel">Contactanos...</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 side-img img-responsive">
+                                <img src="assets/images/image4.png" alt="Anabella">
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 form">
+                                <form method="POST" action="http://formspree.io/asantiago@arsari.com">
+                                    <p>Saludos, me llamo</p>
+                                    <input type="text" name="name" placeholder="Su nombre aqui" />
+                                    <p>Mi direccion de email es</p>
+                                    <input type="email" name="_replyto" placeholder="Su email aqui" />
+                                    <p>Me gustaria puedan...</p>
+                                    <textarea name="message" placeholder="Su mensaje aqui"></textarea>
+                                    <button type="submit" class="btn btn-default">Enviar mensaje</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Form end -->
     </footer>
     <!-- Scripts libraries -->
     <script type="text/javascript" src="assets/js/jquery.js" title="jQuery v1.12.2"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js" title="Bootstrap v3.3.7"></script>
-    <script type="text/javascript" src="assets/js/app.js" title=""></script>
+    <script type="text/javascript" src="assets/js/app.js" title="My Script"></script>
 </body>
 
 </html>

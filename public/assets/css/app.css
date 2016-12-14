@@ -5,7 +5,7 @@
  */
 
 body {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,104 +13,151 @@ body {
     margin: 0;
     border: 0;
     border-radius: 0;
-    background: #3F51B5;
-    box-shadow: 0px 2px 5px grey;
+    background: #3f51b5;
+    box-shadow: 0 2px 5px grey;
 }
 
 #myHeader .navbar-brand {
     color: rgb(255, 129, 34);
 }
 
+#myHeader .navbar-brand span {
+    color: #c5cae9;
+    font-size: 12px;
+}
+
 #myHeader .nav a {
-    color: #ffffff;
-    font-size: 17px;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 15px;
 }
 
 #myHeader .navbar-nav a:hover {
-  color: #C5CAE9;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 0;
+    padding-bottom: 2px;
+    padding-left: 0;
+    border-bottom: 3px solid #c5cae9;
+    color: #c5cae9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
 }
 
 #myHeader .navbar-nav a:focus {
-  background-color: #C5CAE9;
-  color: #3F51B5;
+    background-color: #c5cae9;
+    color: #3f51b5;
 }
 
 #myHeader .navbar-toggle .icon-bar {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #myHeader .navbar-toggle:hover,
 #myHeader .navbar-toggle:focus {
-  background-color: #C5CAE9;
+    background-color: #c5cae9;
 }
 
-#myHeader #carousel-example-generic {
-    height: 550px;
+#myHeader .row,
+#myContent .row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+#myHeader .carousel {
     margin-top: 16px;
 }
 
 #myHeader .carousel-caption {
-    height: 380px;
     margin: 0;
+    height: 380px;
     text-align: center;
     text-shadow: 7px 5px 10px rgba(0, 0, 0, .6);
-    font-size: 60px;
     font-weight: 600;
+    font-size: 60px;
 }
 
 #myHeader .carousel-caption a {
+    color: #fff;
     text-decoration: none;
-    color: #ffffff;
 }
 
 #myHeader .carousel-caption a:hover {
-    color: #CFD8DC;
+    color: #cfd8dc;
+}
+
+#myHeader .carousel-caption p {
+    display: flex;
+    margin-bottom: 0;
+    height: 225px;
+    text-shadow: 0 0 7px #222;
+    font-style: italic;
+    font-size: 24px;
+    align-items: center;
+}
+
+#myHeader .carousel-indicators li {
+    width: 15px;
+    height: 15px;
 }
 
 #myHeader .item img {
     width: 100%;
     height: 55rem;
-    opacity: 0.45;
+    opacity: .45;
+    position: relative;
+    background-size: cover;
 }
 
-#myHeader h1 {
-    font-size: 30px;
+#myHeader #welcome-bar {
+    margin-top: 16px;
+    margin-bottom: 11px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #myHeader #welcome-bar a {
+    color: #fff;
     text-decoration: none;
-    color: #ffffff;
 }
 
 #myHeader #welcome-bar a:hover {
-    color: #E1BEE7;
+    color: #e1bee7;
 }
 
 #myHeader #welcome-bar a:focus {
-    color: #E1BEE7;
+    color: #e1bee7;
 }
 
 #myHeader #welcome-bar h1 {
-    margin: 16px -9px 0px -2px;
-    padding: 6px 0 3px 20px;
-    border-color: #777777;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 6px 0 2px 20px;
+    border-color: #777;
     border-radius: 10px;
-    background-color: #9C27B0;
+    background-color: #9c27b0;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    box-shadow: 1px 1px 3px #222222;
 }
 
 #myHeader #welcome .well {
     margin-bottom: 0;
-    color: #333333;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    background: #F3E5F5;
+    background: #f3e5f5;
+    color: #333;
     font-size: 1.25em;
+    border-left: 8px solid #9c27b0;
+    border-right: 8px solid #9c27b0;
+    border-bottom: 8px solid #9c27b0;
+    transition: all 1s;
 }
 
 #myHeader #welcome img {
-    width: 12rem;
-    padding: 0px 10px 0px 5px;
+    padding: 5px 10px 0 0;
+    width: 16rem;
     text-align: center;
 }
 
@@ -122,31 +169,24 @@ body {
 }
 
 #myHeader #welcome span {
-    color: #B71C1C;
+    color: #b71c1c;
     font-weight: bolder;
 }
 
 #myHeader #welcome span:hover {
-    color: #BA68C8;
-}
-
-#myContent .container {
-    padding: 0px;
-}
-
-#myContent .row {
-    margin: 0px 9px;
+    color: #ba68c8;
 }
 
 #myContent .section-panel {
+    border-color: #777;
     text-align: center;
-    border-color: #777777;
     font-weight: 500;
+    box-shadow: 2px 0px 5px #222222;
 }
 
 #myContent h1 {
     margin-top: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-left: 40px;
     text-align: left;
     font-size: 45px;
@@ -160,21 +200,21 @@ body {
 }
 
 #myContent h3 {
-  margin-top: 0px;
-  margin-bottom: 25px;
-  padding-right: 40px;
-  text-align: right;
-  font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-right: 40px;
+    text-align: right;
+    font-size: 20px;
 }
 
 #myContent .section-panel a {
+    color: #fff;
     text-decoration: none;
-    color: #ffffff;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
 }
 
 #myContent .section-panel a.note {
-    color: #0097A7;
+    color: #0097a7;
     text-shadow: none;
 }
 
@@ -182,71 +222,69 @@ body {
 #myContent #section-2 a.note:hover,
 #myContent #section-3 a.note:hover,
 #myContent #section-4 a.note:hover {
-    color: #B71C1C;
+    color: #b71c1c;
 }
 
 #myContent #section-1 {
-    margin-top: 16px;
-    margin-right: 16px;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     padding-right: 0;
     padding-left: 0;
     border-top-left-radius: 25px;
-    background-color: #E91E63;
+    background-color: #e91e63;
 }
 
 #myContent #section-1 a:hover {
+    color: #f8bbd0;
     text-decoration: none;
-    color: #F8BBD0;
 }
 
 #myContent #section-1 a:focus {
-    color: #F8BBD0;
+    color: #f8bbd0;
 }
 
 #myContent #section-2 {
-    margin-top: 16px;
-    margin-bottom: 8px;
-    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding-right: 0;
     padding-left: 0;
     border-top-right-radius: 25px;
-    background-color: #2196F3;
+    background-color: #2196f3;
 }
 
 #myContent #section-2 a:hover {
+    color: #bbdefb;
     text-decoration: none;
-    color: #BBDEFB;
 }
 
 #myContent #section-2 a:focus {
-    color: #BBDEFB;
+    color: #bbdefb;
 }
 
 #myContent #section-3 {
-    margin-top: 8px;
-    margin-right: 16px;
-    margin-bottom: 16px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     padding-right: 0;
     padding-left: 0;
     border-bottom-left-radius: 25px;
-    background-color: #FF5722;
+    background-color: #ff5722;
 }
 
 #myContent #section-3 a:hover {
+    color: #ffccbc;
     text-decoration: none;
-
-    color: #FFCCBC;
 }
 
 #myContent #section-3 a:focus {
-    color: #FFCCBC;
+    color: #ffccbc;
 }
 
 #myContent #section-4 {
-    margin-top: 8px;
-    margin-bottom: 16px;
-    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
     padding-right: 0;
     padding-left: 0;
     border-bottom-right-radius: 25px;
@@ -254,16 +292,21 @@ body {
 }
 
 #myContent #section-4 a:hover {
+    color: #b2dfdb;
     text-decoration: none;
-    color: #B2DFDB;
 }
 
 #myContent #section-4 a:focus {
-    color: #B2DFDB;
+    color: #b2dfdb;
+}
+
+#myContent .collapse-left {
+    padding: 0;
 }
 
 #myContent .collapse-right {
     float: right;
+    padding: 0;
 }
 
 #myContent .collapse {
@@ -271,19 +314,20 @@ body {
 }
 
 #myContent .well {
-    margin: 0;
-    margin-top: 16px;
+    margin-top: 5px;
+    margin-bottom: 0;
     padding: 15px;
-    text-align: justify;
-    color: #333333;
-    border: 15px solid #dddddd;
+    border: 15px solid #ddd;
     border-radius: 25px;
-    font-size: 1.5rem;
+    color: #333;
+    text-align: justify;
+    font-size: 1.1em;
+    transition: all 0.5s;
 }
 
 #myContent #collapse-1 .well {
-    border-color: #E91E63;
-    background: #FCE4EC;
+    border-color: #e91e63;
+    background: #fce4ec;
 }
 
 #myContent .panel-group {
@@ -291,91 +335,93 @@ body {
 }
 
 #myContent .panel-heading {
-    background: #EC407A;
+    background: #ec407a;
 }
 
 #myContent .panel-body {
-    background: #F8BBD0;
+    background: #f8bbd0;
 }
 
 #myContent .panel-body p {
     margin: 0;
-    color: #333333;
-    font-size: 16px;
+    color: #333;
+    font-size: 1.5rem;
 }
 
-#myContent #collapse-1 img {
-    width: 9em;
-    padding: 1px 10px 0px 0px;
-    border-radius: 25px;
+#myContent #collapse-1 video {
+    padding: 1px 10px 0 0;
+    width: 15rem;
+    border-radius: 15px;
 }
 
 #myContent #collapse-2 .well {
-    border-color: #2196F3;
-    background: #E3F2FD;
+    border-color: #2196f3;
+    background: #e3f2fd;
 }
 
 #myContent #collapse-2 img {
-    width: 13em;
-    padding: 5px 0px 0px 10px;
-    border-radius: 25px;
     float: right;
+    padding: 1px 0 0 10px;
+    width: 13em;
+    border-radius: 25px;
 }
 
 #myContent #collapse-3 .well {
-    border-color: #FF5722;
-    background: #FBE9E7;
+    border-color: #ff5722;
+    background: #fbe9e7;
 }
 
 #myContent #collapse-3 img {
-    width: 11em;
-    padding: 5px 10px 0px 0px;
+    float: right;
+    padding: 1px 0 0 10px;
+    width: 13em;
     border-radius: 25px;
 }
 
 #myContent #collapse-4 .well {
     border-color: #009688;
-    background: #E0F2F1;
+    background: #e0f2f1;
 }
 
 #myContent #collapse-4 img {
+    padding: 1px 10px 0 0;
     width: 12em;
-    padding: 5px 10px 0px 0px;
     border-radius: 25px;
 }
 
 #myContent .back_to_top {
-    display: none;
     position: fixed;
     right: 15px;
-    bottom: 14em;
-    padding: 0.25em;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
+    bottom: 15em;
+    display: none;
+    padding: .25em;
     border-radius: 25px;
     background-color: #d9534f;
+    box-shadow: 0 4px 5px darkslategrey;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
     font-size: 13px;
-    box-shadow: 0px 4px 5px darkslategrey;
 }
 
 #myContent .back_to_top:hover {
-    color: yellow;
     background-color: #3c763d;
+    color: yellow;
 }
 
 #myFooter {
-    color: #ffffff;
-    background-color: #37474F;
+    margin-top: 5px;
+    background-color: #37474f;
+    color: #fff;
 }
 
 #myFooter .row {
     margin-bottom: 10px;
 }
 
-#myFooter .info{
-    text-align: justify;
+#myFooter .info {
     color: #afb0b1;
+    text-align: justify;
     font-size: 10px;
     line-height: 1.75;
 }
@@ -389,45 +435,45 @@ body {
 #myFooter h5 {
     margin-top: 20px;
     color: white;
-    font-size: 18px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 #myFooter .logo {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #myFooter .second-bar .logo a {
     float: left;
     margin: 0;
     padding: 0;
-    color:white;
-    font-size: 28px;
+    color: white;
     font-weight: bold;
+    font-size: 28px;
     line-height: 68px;
 }
 
 #myFooter a {
-    text-decoration: none;
     color: #d2d1d1;
+    text-decoration: none;
 }
 
 #myFooter a:hover,
 #myFooter a:focus {
-    color: #ffffff;
+    color: #fff;
 }
 
 #myFooter .second-bar {
-    text-align: center;
     background-color: #263238;
+    text-align: center;
 }
 
 #myFooter .second-bar a {
     padding: 10px;
-    transition: 0.2s;
     color: #9fa3a9;
     font-size: 22px;
     line-height: 68px;
+    transition: .2s;
 }
 
 #myFooter .second-bar a:hover {
@@ -437,7 +483,6 @@ body {
 #myFooter .social-icons {
     float: right;
 }
-
 
 #myFooter .facebook:hover {
     color: #0077e2;
@@ -452,13 +497,14 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    #myFooter {
+    #myFooter
+    {
         text-align: center;
-      }
-
-#myFooter .info{
+    }
+    #myFooter .info
+    {
         text-align: center;
-        }
+    }
 }
 
 #myFooter h2 {
@@ -470,26 +516,26 @@ body {
 }
 
 #myModal {
-    color: #ffffff;
+    color: #fff;
 }
 
 #myModal a {
-  color: #ffffff;
+    color: #fff;
 }
 
 #myModal .modal-header {
-    background-color: #01579B;
+    background-color: #01579b;
     text-align: left;
 }
 
 #myModal .panel-heading {
-    background: #039BE5;
+    background: #039be5;
     text-align: left;
 }
 
 #myModal .modal-body {
-    color: #333333;
-    background-color: #E1F5FE;
+    background-color: #e1f5fe;
+    color: #333;
 }
 
 #myModal .modal-body p {
@@ -497,52 +543,148 @@ body {
 }
 
 #myModal .modal-body p span {
-    color: #03A9F4;
+    color: #03a9f4;
 }
 
 #myModal .modal-body p span:hover {
-    color: #F44336;
+    color: #f44336;
 }
 
 #myModal .panel-body {
+    background-color: #81d4fa;
     text-align: justify;
+}
 
-    background-color: #81D4FA;
+#myModal .panel-body p {
+    margin-bottom: 0;
 }
 
 #myModal .panel-body ul {
     padding-left: 15px;
-
     list-style-type: disc;
 }
 
 #myModal #collapseEleven img {
-    width: 13em;
-    margin: 0px 8px 0px 0px;
+    margin: 0 8px 0 0;
     padding: 0;
+    width: 13em;
 }
 
 #myModal #collapseTwelve img {
-    width: 9em;
-    margin: 0px 10px 0px 0;
+    margin: 2px 10px 0 0;
     padding: 0;
+    width: 12rem;
 }
 
 #myModal .modal-footer {
-    background-color: #01579B;
+    background-color: #01579b;
 }
 
 #myModalVideo .modal-header {
-    background-color: #F44336;
+    background-color: #f44336;
     text-align: left;
 }
 
 #myModalVideo .modal-footer {
-    background-color: #F44336;
+    background-color: #f44336;
 }
 
 #myModalVideo .modal-body {
-    color: #333333;
-    background-color: #FFCDD2;
+    background-color: #ffcdd2;
+    color: #333;
     text-align: center;
+}
+
+#myModalForm .modal-header {
+    background-color: #795548;
+    text-align: left;
+}
+
+#myModalForm .modal-body {
+    padding: 0;
+}
+
+#myModalForm .row {
+    margin: 0;
+    background-color: #efebe9;
+}
+
+#myModalForm .side-img {
+    padding: 0;
+}
+
+#myModalForm img {
+    margin: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#myModalForm .form {
+    margin-top: 10px;
+    color: #333;
+    text-align: right;
+    font-size: .95em;
+}
+
+#myModalForm .form p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#myModalForm .form input,
+#myModalForm .form textarea {
+    margin-bottom: 5px;
+    width: 100%;
+    border: 0;
+    background-color: #efebe9;
+    font-style: italic;
+}
+
+#myModalForm .form button {
+    border: 1px solid #222;
+    background: #8d6e63;
+    color: #fff;
+    text-shadow: none;
+}
+
+#myModalForm .modal-footer {
+    background-color: #795548;
+    text-align: right;;
+}
+
+/* Custom Tooltip */
+a[mytitle]:hover:after {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    margin-top: 5px;
+    padding: 0 0 0 20px;
+    border-radius: 2px;
+    background: url(../images/favicon.ico) no-repeat;
+    background-color: #000;
+    box-shadow: 2px 0 4px #222;
+    color: #fff;
+    content: attr(mytitle);
+    text-transform: capitalize;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 9px;
+    transition: all .5s;
+}
+
+a[mytitle2]:hover:after {
+    position: absolute;
+    left: 30%;
+    margin-top: 3px;
+    padding: 0 0 0 20px;
+    border-radius: 2px;
+    background: url(../images/favicon.ico) no-repeat;
+    background-color: #000;
+    box-shadow: 2px 0 4px #222;
+    color: #fff;
+    content: attr(mytitle2);
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 9px;
+    transition: all .5s;
 }
