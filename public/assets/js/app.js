@@ -37,6 +37,13 @@ $(document).ready(function() {
     $('#collapse-2').removeClass('in');
     $('#collapse-3').removeClass('in');
   });
+  $('.anylink').click(function() {
+    $('#welcome').removeClass('in');
+    $('#collapse-1').removeClass('in');
+    $('#collapse-2').removeClass('in');
+    $('#collapse-3').removeClass('in');
+    $('#collapse-4').removeClass('in');
+  });
 
 // onClick go to location
   $('.wl').click(function() {
