@@ -29,8 +29,8 @@ body {
 #myHeader .nav a {
     padding: 15px 20px;
     color: #fff;
-    font-size: 15px;
     text-decoration: none;
+    font-size: 15px;
 }
 
 #myHeader .navbar-nav a:hover,
@@ -42,11 +42,11 @@ body {
     padding-left: 0;
     border-bottom: 3px solid #c5cae9;
     color: #c5cae9;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .5s;
-    text-decoration: none;
 }
 
 #myHeader .navbar-toggle .icon-bar {
@@ -97,6 +97,7 @@ body {
     text-shadow: 0 0 7px #222;
     font-style: italic;
     font-size: 24px;
+
     align-items: center;
 }
 
@@ -108,9 +109,7 @@ body {
 #myHeader .item img {
     width: 100%;
     height: 55rem;
-    opacity: .45;
-    position: relative;
-    background-size: cover;
+    opacity: 0.5;
 }
 
 #myHeader #welcome-bar {
@@ -140,30 +139,27 @@ body {
     border-color: #777;
     border-radius: 10px;
     background-color: #9c27b0;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
     box-shadow: 1px 1px 3px #222222;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
 }
 
 #myHeader #welcome .well {
-    margin-bottom: 0;
+    margin: 0 8px 0 8px;
+    border-right: 4px solid #9c27b0;
+    border-bottom: 4px solid #9c27b0;
+    border-left: 4px solid #9c27b0;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     background: #f3e5f5;
     color: #333;
     font-size: 1.25em;
-    border-left: 4px solid #9c27b0;
-    border-right: 4px solid #9c27b0;
-    border-bottom: 4px solid #9c27b0;
-    transition: all 1s;
 }
 
 #myHeader #welcome img {
-    padding: 0px 0px 0 0;
-    width: 16rem;
-    text-align: center;
-    border-right: 3px solid #222222;
-    border-top: 3px solid #222222;
+    float: left;
     margin-right: 10px;
+    padding: 0px 0px 0 0;
+    width: 15rem;
 }
 
 #myHeader #welcome p {
@@ -184,9 +180,9 @@ body {
 
 #myContent .section-panel {
     border-color: #777;
+    box-shadow: 2px 0px 5px #222222;
     text-align: center;
     font-weight: 500;
-    box-shadow: 2px 0px 5px #222222;
 }
 
 #myContent h1 {
@@ -340,8 +336,8 @@ body {
 }
 
 #myContent .panel-heading {
-    background: #ec407a;
     border-radius: 5px;
+    background: #ec407a;
 }
 
 #myContent .panel-body {
@@ -355,11 +351,12 @@ body {
 }
 
 #myContent #collapse-1 video {
+    float: left;
+    margin-right: 10px;
     padding: 0px 0px 0 0;
     width: 14rem;
-    border-radius: 15px;
     border: 1px solid #e91e63;
-    margin-right: 10px;
+    border-radius: 15px;
 }
 
 #myContent #collapse-2 .well {
@@ -369,7 +366,7 @@ body {
 
 #myContent #collapse-2 img {
     float: right;
-    padding: 1px 0 0 10px;
+    padding: 0px 0px 0px 8px;
     width: 19rem;
     border-radius: 25px;
 }
@@ -392,8 +389,9 @@ body {
 }
 
 #myContent #collapse-4 img {
+    float: left;
     padding: 1px 10px 0 0;
-    width: 21rem;
+    width: 20rem;
     border-radius: 25px;
 }
 
@@ -526,15 +524,15 @@ body {
 }
 
 #myModal .panel-heading {
+    border-radius: 5px;
     background: #039be5;
     text-align: left;
-    border-radius: 5px;
 }
 
 #myModal .modal-body {
+    padding-bottom: 0px;
     background-color: #e1f5fe;
     color: #333;
-    padding-bottom: 0px;
 }
 
 #myModal .modal-body p {
@@ -564,6 +562,7 @@ body {
 }
 
 #myModal #collapseEleven img {
+    float: left;
     margin: 0 10px 0 0;
     padding: 0;
     width: 15rem;
@@ -571,6 +570,7 @@ body {
 }
 
 #myModal #collapseTwelve img {
+    float: left;
     margin: 2px 10px 0 0;
     padding: 0;
     width: 12rem;
@@ -603,47 +603,43 @@ body {
 
 #myModalForm .modal-body {
     padding: 0;
-}
-
-#myModalForm .row {
-    margin: 0;
     background-color: #BCAAA4;
 }
 
-#myModalForm .side-img {
-    padding: 0;
+#myModalForm .modal-body img {
+    position: relative;
+    display: inline-block;
+    width: 38%;
+    vertical-align: top;
 }
 
-#myModalForm img {
-    margin: 0;
-    width: 100%;
-    vertical-align: middle;
-}
-
-#myModalForm .form {
-    margin-top: 10px;
-    color: #333333;
+#myModalForm .modal-body form {
+    display: inline-block;
+    padding: 10px 5px;
+    width: 60%;
+    color: #ffffff;
     text-align: right;
     font-size: .95em;
 }
 
-#myModalForm .form p {
+#myModalForm .modal-body form p {
     margin-bottom: 5px;
     text-align: left;
+    font-size: 1em;
 }
 
-#myModalForm .form input,
-#myModalForm .form textarea {
+#myModalForm .modal-body form input,
+#myModalForm .modal-body form textarea {
     margin-bottom: 5px;
+    padding-left: 5px;
     width: 100%;
     border: 0;
+    border-radius: 5px;
     background-color: #efebe9;
     font-style: italic;
-    border-radius: 5px;
-    padding-left: 5px;
 }
 
-#myModalForm .form button {
+#myModalForm .modal-body form button {
     border: 1px solid #8d6e63;
     background: #8d6e63;
     color: #fff;
