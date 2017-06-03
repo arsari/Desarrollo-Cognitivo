@@ -1,9 +1,13 @@
-### Web Server
+### Desarrollo Cognitivo
 
-To install the server:
+```
+Codetrotters Intro to Web Development Fall 2016
+Final Project web Page
+December 14, 2016
+Arturo Santiago-Rivera
+```
 
-Install node on nodejs.org
+El proyecto de pagina Web aqui desarrollado, esta motivado en el aprendizaje del desarrollo del pensamiento de mis nietas, Anabella y Vianca, según la teoría del desarrollo cognitivo, o tambien llamado desarrollo cognoscitivo,
 
-Inside the Directory run: `npm i`
-
-To run the local server run : `npm start`
+![ScreenShot](public/project-wireframe.png)
+<br />Figure 1: Scan Project Conceptual Wireframe
